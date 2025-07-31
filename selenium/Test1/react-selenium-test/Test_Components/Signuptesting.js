@@ -20,6 +20,9 @@ const message = await driver
     catch(err){
         console.error('Test failed:', err);
     }
+    finally{
+        await driver.quit();
+    }
 
 }
 module.exports = Signuptesting;
